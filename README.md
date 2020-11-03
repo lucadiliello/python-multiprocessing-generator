@@ -32,3 +32,12 @@ res = multiprocessing_generator(test_list, heavy_work, *heavy_work_args, **heavy
 for r in res:
     print(r)
 ```
+
+## Issues
+Feel free to open issues and pull requests!
+
+## Uninstall
+
+```bash
+pip uninstall multiprocessing-python
+```
