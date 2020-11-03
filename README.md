@@ -10,7 +10,7 @@ pip install git+https://github.com/lucadiliello/python-multiprocessing-generator
 ## Example
 
 ```python
-from multiprocessing_generator import multiprocessor_generator 
+from multiprocessing_generator import multiprocessing_generator 
 
 # define the function that will do the heavy work
 # the first argument will be sourced from the generator list
@@ -26,7 +26,7 @@ heavy_work_args = []
 heavy_work_kwargs = {}
 
 # call the generator
-res = multiprocessor_generator(test_list, heavy_work, *heavy_work_args, **heavy_work_kwargs)
+res = multiprocessing_generator(test_list, heavy_work, *heavy_work_args, **heavy_work_kwargs)
 
 # consume the output
 for r in res:
